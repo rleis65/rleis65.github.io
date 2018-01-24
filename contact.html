@@ -4,90 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    <title>Ryan Leis-Contact</title>
+    <title>About | Ryan Leis</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
 </head>
 
-<body class="body" background="assets/images/cheap_diagonal_fabric 2/cheap_diagonal_fabric.png">
-    <div class="container">
-       
-        <div class="MainHeader">
-            <div class="HeaderTitle">
-                <h1>Ryan Leis</h1>
-            </div>
-            <div class="Menu">
-                <nav id="nav">
-                    <ul>
-                        <li id="about"><a href="index.html">About</a></li>
-                        <li id="portfolio"><a href="portfolio.html">Portfolio</a></li>
-                        <li id="contact"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div class="MainContent">
-            <div class="MainContentHeader">
-                <h1>Contact</h1>
-            </div>
-            <div>
-                <form id="contactform">
-                    <div>
-                        <div class="inputlabels">
-                        <label for="name">
-                            <span>Name</span>
-                        </div>   
-                            <input type="text" id="name" value="" placeholder="John Smith" tabindex="1"/>
-                        </label>
-                    </div>
-                    <div>
-                        <div class="inputlabels">    
-                        <label for="email">
-                                <span>Email</span>
-                        </div>      
-                                <input type="email" id="email" value="" placeholder="example@gmail.com" tabindex="2"/>
-                            </label>
-                    </div>
-                    <div>
-                        <div class="inputlabels">
-                            <label for="message">
-                                <span>Message</span>
-                        </div>        
-                                <textarea id="message" name="message" placeholder="" tabindex="3"></textarea>
-                            </label>
-                        </div>
-                        <div>		           
-                                <button name="submit" type="submit" id="submit" >Submit</button> 
-                        </div>
-
-                </form>
-            </div>
-            
-            
-        </div>
-
-        <div class="Sidebar"> 
-            <div class="SidebarHeader">
-                <h2>Connect With Me</h2>
-            </div> 
-            <div class="SidebarContent">
-                <a href="https://stackoverflow.com/users/9212594/ryan-leis"><img src="assets/images/stackoverflow-128.png" alt="StackOverflow Link" style="width:60px; height:60px; border: 0">
-                </a>
-                <a href="https://www.linkedin.com/in/ryan-leis-25b81514a/
-                "><img src="assets/images/linkedin_circle_color-128.png" alt="LinkdIn Link" style="width:60px; height:60px; border: 0">
-                </a>
-                <a href="https://github.com/rleis65"><img src="assets/images/github-social-media-128.png" alt="GitHub Link" style="width:60px; height:60px; border: 0">
-                </a>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p class="footertext">&copy; copyright 2018 Ryan Leis</p> 
-        </div>
-
-    </div>
-
+<body>
     
+    <header id="masthead">    
+        <div class="container">    
+            <a href="index.html" id="logo">Your Name</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+          <h1>Contact</h1>
     
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
+    
+        </section>
+    
+        <section class="sidebar">
+          <div id="connect">
+            <h2>Connect with Me</h2>
+    
+            <a href="https://github.com/rleis65"><img src="assets/images/github-social-media-128.png" class="social" alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/ryan-leis-25b81514a/"><img src="assets/images/linkedin_circle_color-128.png" class="social" alt="LinkedIn" /></a>
+            <a href="https://stackoverflow.com/users/9212594/ryan-leis"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="container">
+          Copyright &copy; 2018 Ryan Leis
+        </div>
+      </footer>
 </body>
+    
 </html>
